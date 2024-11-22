@@ -1,0 +1,177 @@
+/* :root - специфичный аналог селектора <html> в CSS*/
+/* Указываются */
+/* CSS-переменные (кастомные свойства) */
+:root {
+  /* #757575 - p, header - a(email) и a(tel) - не активные */
+  --main-text-color: #757575;
+  /* #212121 - h2, h3, a(nav in header) - не активный*/
+  --second-text-color: #212121;
+  /* #2196F3 - logo, a(nav):hover, button(background)*/
+  --acsent-color: #2196f3;
+  /* #FFFFFF - background-page, h1, button(text), footer - logo, adress (почтовый адрес) */
+  --main-white-color: #ffffff;
+  /* #2F303A - background-hero, background-footer */
+  --background-grey-color: #2f303a;
+  /* #F5F4FA - background-section-team */
+  --background-section-color: #f5f4fa;
+  /* #000000 - logo(header)*/
+  --main-black-color: #000000;
+  /* rgba(255,255,255,0.6) - adress (tel,email) */
+  --text-footer-tel-color: rgba(255, 255, 255, 0.6);
+  /* #ECECEC - обводка-header + line (между header и main)*/
+  --line-color: #ececec;
+}
+
+/* Палитра основных цветов */
+/* #757575 - p, a(email) и a(tel) - не активные */
+/* #212121 - h2, h3, a(nav in header) - не активный*/
+/* #2196F3 - logo, a(nav):hover, button(background)*/
+/* #FFFFFF - background-page, h1, button(text), footer - logo, adress (почтовый адрес) */
+/* #2F303A - background-hero, background-footer */
+/* #F5F4FA - background-section-team */
+/* #000000 - logo(header)*/
+/* rgba(255,255,255,0.6) - adress (tel,email) */
+/* #ECECEC - обводка-header + line (между header и main)*/
+
+body {
+  background-color: var(--main-white-color);
+  color: var(--main-text-color);
+}
+
+/* Утилиты */
+
+/* Класс для настройки ссылок  */
+.link {
+  /* Убрать подчеркивание для ссылки */
+  text-decoration: none;
+}
+
+/* Класс для настройки всех перечней - Будет вторым классом в тегах ul */
+.list {
+  /* Убрать первые точечки в неупорядоченном списке */
+  list-style: none;
+}
+
+/* Логотип */
+/* Логотип - синяя часть текста */
+.logo-blue {
+  color: var(--acsent-color);
+}
+/* Логотип - черная часть текста - в header */
+.logo-black {
+  color: var(--main-black-color);
+}
+/* Логотип - белая часть текста - в footer */
+.logo-white {
+  color: var(--main-white-color);
+}
+
+/* Стилизация header */
+/* Стилизация меню .nav-site */
+.nav-site .link {
+  color: var(--second-text-color);
+}
+/* При наведении мышки или при получении фокуса */
+.nav-site .link:hover,
+.nav-site .link:focus {
+  color: var(--acsent-color);
+}
+
+/* Правило - другой цвет ссылки , если ссылка указывает на текущую страницу */
+/* Обязательно .link.current БЕЗ ПРОБЕЛА, тогда применяется class="link current" */
+.nav-site .link.current {
+  color: var(--acsent-color);
+}
+
+/* Стилизация меню .nav-adress */
+.nav-adress .link {
+  color: var(--main-text-color);
+}
+/* При наведении мышки или при получении фокуса */
+.nav-adress .link:hover,
+.nav-adress .link:focus {
+  color: var(--acsent-color);
+}
+
+/* hero - Приветствие к кнопкой call-to-action */
+.hero {
+  background-color: var(--background-grey-color);
+}
+.hero-title {
+  color: var(--main-white-color);
+}
+.button {
+  color: var(--main-white-color);
+  background-color: var(--acsent-color);
+  /* Радиус скругления углов кнопки */
+  border-radius: 4px;
+  /* Внутренние отступы от края кнопки до текста */
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+}
+
+/* Секции  */
+.section-title {
+  color: var(--second-text-color);
+}
+
+/* feature - Особливості - Преимущества */
+.feature-list .title {
+  color: var(--second-text-color);
+}
+
+/* work - Роботи */
+
+/* team - Команда */
+.team {
+  background-color: var(--background-section-color);
+}
+.team-list-item .name {
+  color: var(--second-text-color);
+}
+
+/* Portfolio */
+/* filter - Фильтры */
+.filter .title {
+  color: var(--main-black-color);
+}
+
+.filter-button {
+  color: var(--second-text-color);
+  background-color: var(--background-section-color);
+}
+
+.filter-button:hover {
+  color: var(--main-white-color);
+  background-color: var(--acsent-color);
+}
+
+/* project - Проэкты */
+.project .title {
+  color: var(--main-black-color);
+}
+.project-name {
+  color: var(--second-text-color);
+}
+.project-type {
+  color: var(--main-text-color);
+}
+
+/* footer */
+footer {
+  background-color: var(--background-grey-color);
+}
+/* Почтовый адрес */
+address .description {
+  color: var(--main-white-color);
+}
+/* Email */
+address .email {
+  color: var(--text-footer-tel-color);
+}
+/* Телефон */
+address .tel {
+  color: var(--text-footer-tel-color);
+}
