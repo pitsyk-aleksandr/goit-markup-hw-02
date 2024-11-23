@@ -18,8 +18,10 @@
   --main-black-color: #000000;
   /* rgba(255,255,255,0.6) - adress (tel,email) */
   --text-footer-tel-color: rgba(255, 255, 255, 0.6);
-  /* #ECECEC - обводка-header + line (между header и main)*/
-  --line-color: #ececec;
+  /* #ECECEC - обводка-header + line в index.html (между header и main)*/
+  --stroke-index-color: #ececec;
+  /* #EEEEEE - обводка карточки в portfolio.html */
+  --stroke-portfolio-color: #eeeeee;
 }
 
 /* Палитра основных цветов */
@@ -31,11 +33,48 @@
 /* #F5F4FA - background-section-team */
 /* #000000 - logo(header)*/
 /* rgba(255,255,255,0.6) - adress (tel,email) */
-/* #ECECEC - обводка-header + line (между header и main)*/
+/* #ECECEC - обводка-header + line в index.html (между header и main)*/
+/* #EEEEEE - обводка карточки в portfolio.html */
 
+/* Шрифты */
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Тело сайта */
 body {
   background-color: var(--main-white-color);
   color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
 /* Утилиты */
@@ -54,6 +93,13 @@ body {
 
 /* Логотип */
 /* Логотип - синяя часть текста */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+}
 .logo-blue {
   color: var(--acsent-color);
 }
@@ -68,6 +114,11 @@ body {
 
 /* Стилизация header */
 /* Стилизация меню .nav-site */
+.nav-site {
+  font-weight: 500;
+  font-size: 14px;
+}
+
 .nav-site .link {
   color: var(--second-text-color);
 }
@@ -84,6 +135,10 @@ body {
 }
 
 /* Стилизация меню .nav-adress */
+.nav-adress {
+  font-weight: 500;
+  font-size: 14px;
+}
 .nav-adress .link {
   color: var(--main-text-color);
 }
@@ -99,27 +154,49 @@ body {
 }
 .hero-title {
   color: var(--main-white-color);
+  font-weight: 900;
+  font-size: 44px;
 }
+
 .button {
   color: var(--main-white-color);
   background-color: var(--acsent-color);
   /* Радиус скругления углов кнопки */
   border-radius: 4px;
+  /* Обводка кнопки - отсутствует */
+  border: none;
   /* Внутренние отступы от края кнопки до текста */
   padding-left: 32px;
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
+  /* Шрифт названия кнопки */
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button:hover {
+  /* Вид курсора при наведении на кнопку */
+  cursor: pointer;
 }
 
 /* Секции  */
 .section-title {
   color: var(--second-text-color);
+  font-weight: 700;
+  font-size: 36px;
 }
 
 /* feature - Особливості - Преимущества */
-.feature-list .title {
+.feature .title {
   color: var(--second-text-color);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.feature .description {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* work - Роботи */
@@ -130,6 +207,12 @@ body {
 }
 .team-list-item .name {
   color: var(--second-text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-list-item .type-worker {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* Portfolio */
@@ -141,9 +224,28 @@ body {
 .filter-button {
   color: var(--second-text-color);
   background-color: var(--background-section-color);
+  /* Радиус скругления углов кнопки */
+  border-radius: 4px;
+  /* Обводка кнопки - отсутствует */
+  border: none;
+  /* Внутренние отступы от края кнопки до текста */
+  padding-left: 22px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  /* Шрифт */
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .filter-button:hover {
+  color: var(--main-white-color);
+  background-color: var(--acsent-color);
+  /* Вид курсора при наведении на кнопку */
+  cursor: pointer;
+}
+
+.filter-button.current {
   color: var(--main-white-color);
   background-color: var(--acsent-color);
 }
@@ -154,9 +256,15 @@ body {
 }
 .project-name {
   color: var(--second-text-color);
+  /* Шрифт */
+  font-weight: 700;
+  font-size: 18px;
 }
 .project-type {
   color: var(--main-text-color);
+  /* Шрифт */
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* footer */
@@ -164,6 +272,10 @@ footer {
   background-color: var(--background-grey-color);
 }
 /* Почтовый адрес */
+address {
+  font-weight: 400;
+  font-size: 14px;
+}
 address .description {
   color: var(--main-white-color);
 }
@@ -171,7 +283,15 @@ address .description {
 address .email {
   color: var(--text-footer-tel-color);
 }
+address .email:hover,
+address .email:focus {
+  color: var(--acsent-color);
+}
 /* Телефон */
 address .tel {
   color: var(--text-footer-tel-color);
+}
+address .tel:hover,
+address .tel:focus {
+  color: var(--acsent-color);
 }
