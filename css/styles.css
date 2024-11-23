@@ -187,6 +187,12 @@ body {
   font-size: 36px;
 }
 
+/* Только для секции Преимущества убирает вывод на экран заголовка */
+.section-title.feature {
+  /* Убирает вывод элемента на экран */
+  visibility: hidden;
+}
+
 /* feature - Особливості - Преимущества */
 .feature .title {
   color: var(--second-text-color);
@@ -216,8 +222,13 @@ body {
 }
 
 /* Portfolio */
+
+.portfolio-title {
+  color: var(--main-black-color);
+}
+
 /* filter - Фильтры */
-.filter .title {
+.filter-title {
   color: var(--main-black-color);
 }
 
@@ -251,7 +262,7 @@ body {
 }
 
 /* project - Проэкты */
-.project .title {
+.project-title {
   color: var(--main-black-color);
 }
 .project-name {
