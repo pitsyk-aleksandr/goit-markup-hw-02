@@ -79,13 +79,13 @@ body {
 
 /* Утилиты */
 
-/* Класс для настройки ссылок  */
+/* Класс для настройки ссылок - может быть вторым классом для тегов <a>  */
 .link {
   /* Убрать подчеркивание для ссылки */
   text-decoration: none;
 }
 
-/* Класс для настройки всех перечней - Будет вторым классом в тегах ul */
+/* Класс для настройки всех перечней - может быть вторым классом в тегах ul */
 .list {
   /* Убрать первые точечки в неупорядоченном списке */
   list-style: none;
@@ -99,6 +99,8 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 3%;
 }
 .logo-blue {
   color: var(--acsent-color);
@@ -117,6 +119,8 @@ body {
 .nav-site {
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .nav-site .link {
@@ -138,6 +142,8 @@ body {
 .nav-adress {
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .nav-adress .link {
   color: var(--main-text-color);
@@ -156,6 +162,10 @@ body {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  /* Выравнивание этого текстового блока по центру */
+  text-align: center;
 }
 
 .button {
@@ -171,8 +181,12 @@ body {
   padding-right: 32px;
   padding-bottom: 10px;
   /* Шрифт названия кнопки */
+  /* Для кнопки - обязательное указание шрифта или указание унаследования (по умолчанию, заданный ранее) */
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.875; /* 30 px*/
+  letter-spacing: 0.06em;
 }
 
 .button:hover {
@@ -185,6 +199,8 @@ body {
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 /* Только для секции Преимущества убирает вывод на экран заголовка */
@@ -194,15 +210,19 @@ body {
 }
 
 /* feature - Особливості - Преимущества */
-.feature .title {
+.feature-list .title {
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
-.feature .description {
+.feature-list .text {
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.71428; /* 24px */
+  letter-spacing: 0.03em;
 }
 
 /* work - Роботи */
@@ -215,10 +235,14 @@ body {
   color: var(--second-text-color);
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .team-list-item .type-worker {
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 /* Portfolio */
@@ -245,8 +269,12 @@ body {
   padding-right: 22px;
   padding-bottom: 6px;
   /* Шрифт */
+  /* Для кнопки - обязательное указание шрифта или указание унаследования (по умолчанию, заданный ранее) */
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.625; /* 26px */
+  letter-spacing: 0.03em;
 }
 
 .filter-button:hover {
@@ -270,12 +298,16 @@ body {
   /* Шрифт */
   font-weight: 700;
   font-size: 18px;
+  line-height: 2; /* 36px */
+  letter-spacing: 0.06em;
 }
 .project-type {
   color: var(--main-text-color);
   /* Шрифт */
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.875; /* 30px */
+  letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -284,8 +316,11 @@ footer {
 }
 /* Почтовый адрес */
 address {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.71428; /* 24px */
+  letter-spacing: 0.03em;
 }
 address .description {
   color: var(--main-white-color);
