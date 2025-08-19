@@ -134,7 +134,7 @@ a {
   width: 169px;
   height: 56px;
   /* Тінь кнопки */
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
 
   /* Шрифт тексту кнопки */
   font-weight: 500;
