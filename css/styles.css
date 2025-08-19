@@ -47,7 +47,7 @@ a {
 }
 
 /* Хедер сторінки - page-header */
-.page-header {}
+/* .page-header {} */
 
 
 /* Клас для всього логотипу */
@@ -161,7 +161,7 @@ a {
 }
 
 /* Стилі для всіх секцій */
-.section {}
+/* .section {} */
 
 /* Заголовки секцій - клас Header 2 */
 .section .title {
@@ -179,9 +179,9 @@ a {
 
 
 /* Секція  Features  */
-.feature-list {}
+/* .feature-list {} */
 
-.feature-item {}
+/* .feature-item {} */
 
 /* Підзаголовки секцій */
 .feature-title {
@@ -194,9 +194,7 @@ a {
   color: #2e2f42;
 }
 
-.feature-text {
-
-}
+/* .feature-text {} */
 
 .section.team {
   /* Колір  - стиль  cloud  */
@@ -206,18 +204,14 @@ a {
 
 
 /* Секція  Our Team  */
-.card-list {
-
-}
+/* .card-list {} */
 
 .card-item {
     /* Колір - стиль  white  */
   background-color: #ffffff;
 }
 
-.card-img {
-
-}
+/* .card-img {} */
 
 .card-name {
   /* Текстовий стиль - Header 3 */
@@ -236,17 +230,12 @@ a {
 
 
 /* Секція  Our Portfolio  */
-.project-list {
 
-}
+/* .project-list {} */
 
-.project-item {
+/* .project-item {} */
 
-}
-
-.project-img {
-
-}
+/* .project-img {} */
 
 .project-title {
     /* Текстовий стиль - Header 3 */
@@ -259,7 +248,7 @@ a {
   color: #2e2f42;
 }
 
-.project-type {}
+/* .project-type {} */
 
 /* Футер сторінки - page-footer */
 .page-footer {
