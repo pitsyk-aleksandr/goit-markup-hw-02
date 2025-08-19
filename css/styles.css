@@ -1,23 +1,24 @@
 /* Main styles */
-:root {
+
+/* :root { */
   /* Шрифти */
-  --font-family: 'Roboto', sans-serif;
-  --second-family: 'Raleway', sans-serif;
+  /* --font-family: 'Roboto', sans-serif; */
+  /* --second-family: 'Raleway', sans-serif; */
 
   /* Кольори */
-  --iris: #4d5ae5;
-  --ocean: #404bbf;
-  --navy-blue: #2e2f42;
-  --green: #31d0aa;
-  --slate: #434455;
-  --light-slate: #8e8f99;
-  --cornflower: #e7e9fc;
-  --cloud: #f4f4fd;
-  --navy-blue-modal: rgba(46, 47, 66, 0.4);
-  --grey: rgba(46, 47, 66, 0.7);
-  --white: #fff;
-  --dairy: #fcfcfc;
-}
+  /* --iris: #4d5ae5; */
+  /* --ocean: #404bbf; */
+  /* --navy-blue: #2e2f42; */
+  /* --green: #31d0aa; */
+  /* --slate: #434455; */
+  /* --light-slate: #8e8f99; */
+  /* --cornflower: #e7e9fc; */
+  /* --cloud: #f4f4fd; */
+  /* --navy-blue-modal: rgba(46, 47, 66, 0.4); */
+  /* --grey: rgba(46, 47, 66, 0.7); */
+  /* --white: #fff; */
+  /* --dairy: #fcfcfc; */
+/* } */
 
 /* Глобальні стилі */
 body {
@@ -74,14 +75,14 @@ a {
   color: #f4f4fd;
 }
 
-.menu {
+.menu-link {
   font-weight: 500;
   /* Колір тексту  - стиль  navy-blue  */
   color: #2e2f42;
 }
 
-.menu:hover,
-.menu:focus {
+.menu-link:hover,
+.menu-link:focus {
   /* Колір тексту - стиль  ocean  */
   color: #404bbf;
 }
@@ -127,12 +128,15 @@ a {
 /* Кнопка */
 .hero-button {
   /* Радіус кутів */
-  border-radius: 4px;
+  /* border-radius: 4px; */
+
   /* Внутрішні відступи */
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
+
   /* Розміри кнопки */
-  width: 169px;
-  height: 56px;
+  /* width: 169px; */
+  /* height: 56px; */
+
   /* Тінь кнопки */
   /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
 
