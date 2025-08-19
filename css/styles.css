@@ -35,16 +35,16 @@ body {
   /* box-sizing: border-box; */
 }
 
-ul,
-ol {
+/* ul, */
+/* ol { */
   /* Скидання дефолтних маркерів для списків */
-  list-style-type: none;
-}
+  /* list-style-type: none; */
+/* } */
 
-a {
+/* a { */
   /* Скидання дефолтного підкреслення для посилань */
-  text-decoration: none;
-}
+  /* text-decoration: none; */
+/* } */
 
 /* Хедер сторінки - page-header */
 /* .page-header {} */
