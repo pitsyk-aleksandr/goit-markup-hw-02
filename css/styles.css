@@ -31,7 +31,7 @@ body {
   color: #434455;
   background-color: #ffffff;
   /* Включаємо всі поля і межі в склад блоку */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 ul,
@@ -56,27 +56,38 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  /* Колір тексту - стиль  navy-blue  */
-  color: #2e2f42;
-}
-
-/* Клас для першої частини логотипу */
-.logo-start {
-  /* Колір тексту - стиль  iris  */
+   /* Колір тексту - стиль  iris  */
   color: #4d5ae5;
 }
 
-.menu a {
+/* Клас для другої частини логотипу */
+.logo-end {
+    /* Колір тексту - стиль  navy-blue  */
+  color: #2e2f42;
+
+}
+
+.menu {
   font-weight: 500;
-  /* Колір тексту посилань - стиль  navy-blue  */
+  /* Колір тексту  - стиль  navy-blue  */
   color: #2e2f42;
 }
 
-.address .link {
-  /* Скидаємо дефолтне значення для стилю - курсив */
+.menu:hover,
+.menu:focus {
+  /* Колір тексту - стиль  ocean  */
+  color: #404bbf;
+}
+
+
+.address {
+    /* Скидаємо дефолтне значення для стилю - курсив */
   font-style: normal;
+}
+
+.address .link {
   font-weight: 400;
   font-size: 16px;
   /* Колір тексту посилань - стиль  slate  */
@@ -101,7 +112,7 @@ a {
   /* Текст - стиль Header 1 */
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   /* Колір - стиль  white  */
@@ -123,30 +134,34 @@ a {
   /* Шрифт тексту кнопки */
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5 ;
   letter-spacing: 0.04em;
 
   /* Колір тексту  - стиль  white  */
   color: #ffffff;
   /* Колір - стиль  iris  */
   background-color: #4d5ae5;
+  /* Тип курсора */
+  cursor: pointer;
 }
 
-.hero-button:hover {
-  cursor: pointer;
-    /* Колір - стиль  ocean  */
+.hero-button:hover,
+.hero-button:focus {
+  /* Колір - стиль  ocean  */
   background-color: #404bbf;
 }
 
 /* Стилі для всіх секцій */
-.section {
-
-}
+.section {}
 
 /* Заголовки секцій - клас Header 2 */
 .section .title {
+  /* Визначення стилю написання тексту */
+  text-transform: capitalize;
+
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   /* Колір - стиль  navy-blue  */
@@ -155,13 +170,9 @@ a {
 
 
 /* Секція  Features  */
-.feature-list {
+.feature-list {}
 
-}
-
-.feature-item {
-
-}
+.feature-item {}
 
 /* Підзаголовки секцій */
 .feature-title {
@@ -178,6 +189,12 @@ a {
 
 }
 
+.section.team {
+  /* Колір  - стиль  cloud  */
+  background-color: #f4f4fd;
+}
+
+
 
 /* Секція  Our Team  */
 .card-list {
@@ -185,7 +202,8 @@ a {
 }
 
 .card-item {
-
+    /* Колір - стиль  white  */
+  background-color: #ffffff;
 }
 
 .card-img {
