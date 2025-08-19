@@ -237,7 +237,12 @@ a {
 /* Футер сторінки - page-footer */
 .page-footer {
   /* Колір   - стиль  navy-blue  */
-  border-color: #2e2f42;
+  background-color: #2e2f42;
+}
+
+.page-footer .link.logo {
+  /* Колір   - стиль  cloud  */
+  color: #f4f4fd;
 }
 
 .text-footer {
