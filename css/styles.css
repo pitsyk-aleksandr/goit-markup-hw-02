@@ -31,8 +31,7 @@ body {
   /* Колір основного тексту - стиль  slate  */
   color: #434455;
   background-color: #ffffff;
-  /* Включаємо всі поля і межі в склад блоку */
-  /* box-sizing: border-box; */
+
 }
 
 /* ul, */
@@ -127,18 +126,6 @@ body {
 
 /* Кнопка */
 .hero-button {
-  /* Радіус кутів */
-  /* border-radius: 4px; */
-
-  /* Внутрішні відступи */
-  /* padding: 16px 32px; */
-
-  /* Розміри кнопки */
-  /* width: 169px; */
-  /* height: 56px; */
-
-  /* Тінь кнопки */
-  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
 
   /* Шрифт тексту кнопки */
   font-weight: 500;
